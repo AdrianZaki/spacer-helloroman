@@ -33,6 +33,7 @@ export default {
     };
   },
   methods: {
+    // eslint-disable-next-line
     handleInput: debounce(function () {
       axios.get(`${api}?q=${this.searchValue}&media_type=image`)
         .then((response) => {
